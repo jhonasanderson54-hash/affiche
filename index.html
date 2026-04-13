@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prisme Digital — Agence Web Premium | Burkina Faso</title>
+  <meta name="description"
+    content="Prisme Digital — Agence digitale premium basée au Burkina Faso. Création de sites web, affiches publicitaires, portfolios professionnels." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Lier le CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════ -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__logo">P<span>D</span></div>
+      <div class="loader__bar">
+        <div class="loader__fill"></div>
+      </div>
+      <p class="loader__text">Chargement en cours…</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HEADER / NAVIGATION FIXE
+  ══════════════════════════════════════ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#hero" class="nav__logo">
+        <span class="logo__prisme">Prisme</span>
+        <span class="logo__digital">Digital</span>
+      </a>
+
+      <!-- Menu desktop -->
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#hero" class="nav__link" data-nav="accueil">Accueil</a></li>
+        <li><a href="#services" class="nav__link" data-nav="services">Services</a></li>
+        <li><a href="#apropos" class="nav__link" data-nav="apropos">À propos</a></li>
+        <li><a href="#portfolio" class="nav__link" data-nav="portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav__link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA + hamburger -->
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--cta">Décrire votre projet</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu mobile" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <!-- Fond décoratif -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__container">
+        <!-- Texte principal -->
+        <div class="hero__content" data-animate="hero">
+          <div class="hero__badge">
+            <span class="badge__dot"></span>
+            Agence premium · Burkina Faso &amp; Maroc
+          </div>
+
+          <h1 class="hero__title">
+            Transformez votre<br />
+            <span class="hero__title--gradient">présence digitale</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Nous concevons des expériences numériques mémorables qui propulsent
+            votre marque vers l'excellence — du site web au portfolio,
+            jusqu'aux visuels publicitaires qui marquent les esprits.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Commencer <i data-feather="arrow-right"></i></a>
+            <a href="#portfolio" class="btn btn--ghost">Voir nos projets <i data-feather="play"></i></a>
+          </div>
+
+        </div>
+
+        <!-- Illustration / Mockup -->
+        <div class="hero__visual" data-animate="hero" style="--delay:.2s">
+          <div class="hero__mockup">
+            <div class="mockup__browser">
+              <div class="mockup__bar">
+                <span></span><span></span><span></span>
+                <div class="mockup__url">prismedigital.bf</div>
+              </div>
+              <div class="mockup__screen">
+                <div class="mockup__row mockup__row--nav"></div>
+                <div class="mockup__row mockup__row--hero">
+                  <div class="mockup__block mockup__block--title"></div>
+                  <div class="mockup__block mockup__block--sub"></div>
+                  <div class="mockup__block mockup__block--btn"></div>
+                </div>
+                <div class="mockup__row mockup__row--cards">
+                  <div class="mockup__card"></div>
+                  <div class="mockup__card"></div>
+                  <div class="mockup__card"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Badge flottant -->
+            <div class="mockup__badge mockup__badge--1">
+              <i data-feather="trending-up"></i>
+              <span>+240% de trafic</span>
+            </div>
+            <div class="mockup__badge mockup__badge--2">
+              <i data-feather="zap"></i>
+              <span>Livré en 7 jours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#services" class="hero__scroll" aria-label="Défiler vers les services">
+        <span class="scroll__label">Défiler</span>
+        <span class="scroll__line"></span>
+      </a>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SERVICES
+    ══════════════════════════════════════ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="section__tag">Ce que nous faisons</span>
+          <h2 class="section__title">Nos <em>services</em> premium</h2>
+          <p class="section__desc">
+            De l'idée à la réalisation, nous vous accompagnons à chaque étape
+            pour créer des solutions digitales qui dépassent vos attentes.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- Service 1 -->
+          <article class="service-card" data-animate style="--delay:0s">
+            <div class="service-card__icon">
+              <i data-feather="monitor"></i>
+            </div>
+            <div class="service-card__number">01</div>
+            <h3 class="service-card__title">Création de sites web</h3>
+            <p class="service-card__desc">
+              Sites vitrines, e-commerces, landing pages — chaque pixel est pensé
+              pour convertir et impressionner.
+            </p>
+            <ul class="service-card__list">
+              <li><i data-feather="check"></i> Design sur-mesure</li>
+              <li><i data-feather="check"></i> Responsive &amp; performant</li>
+              <li><i data-feather="check"></i> SEO optimisé</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">
+              En savoir plus <i data-feather="arrow-right"></i>
+            </a>
+            <div class="service-card__glow"></div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card service-card--featured" data-animate style="--delay:.1s">
+            <div class="service-card__badge">Populaire</div>
+            <div class="service-card__icon">
+              <i data-feather="image"></i>
+            </div>
+            <div class="service-card__number">02</div>
+            <h3 class="service-card__title">Affiches publicitaires</h3>
+            <p class="service-card__desc">
+              Visuels percutants pour vos campagnes — print, réseaux sociaux,
+              affichage urbain. Identité forte garantie.
+            </p>
+            <ul class="service-card__list">
+              <li><i data-feather="check"></i> Identité visuelle</li>
+              <li><i data-feather="check"></i> Format multi-support</li>
+              <li><i data-feather="check"></i> Livraison rapide</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">
+              En savoir plus <i data-feather="arrow-right"></i>
+            </a>
+            <div class="service-card__glow"></div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card" data-animate style="--delay:.2s">
+            <div class="service-card__icon">
+              <i data-feather="briefcase"></i>
+            </div>
+            <div class="service-card__number">03</div>
+            <h3 class="service-card__title">Portfolios professionnels</h3>
+            <p class="service-card__desc">
+              Mettez en valeur votre talent avec un portfolio élégant qui reflète
+              votre expertise et attire les meilleures opportunités.
+            </p>
+            <ul class="service-card__list">
+              <li><i data-feather="check"></i> Design personnalisé</li>
+              <li><i data-feather="check"></i> Galerie interactive</li>
+              <li><i data-feather="check"></i> Formulaire de contact</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">
+              En savoir plus <i data-feather="arrow-right"></i>
+            </a>
+            <div class="service-card__glow"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         À PROPOS
+    ══════════════════════════════════════ -->
+    <section class="apropos section" id="apropos">
+      <div class="container apropos__container">
+
+        <!-- Illustration gauche -->
+        <div class="apropos__visual" data-animate>
+          <div class="apropos__illustration">
+            <div class="illus__ring illus__ring--1"></div>
+            <div class="illus__ring illus__ring--2"></div>
+            <div class="illus__ring illus__ring--3"></div>
+            <div class="illus__center">
+              <i data-feather="globe"></i>
+            </div>
+            <!-- Icônes orbitales -->
+            <div class="illus__orbit" style="--angle:0deg">
+              <div class="illus__dot"><i data-feather="code"></i></div>
+            </div>
+            <div class="illus__orbit" style="--angle:72deg">
+              <div class="illus__dot"><i data-feather="pen-tool"></i></div>
+            </div>
+            <div class="illus__orbit" style="--angle:144deg">
+              <div class="illus__dot"><i data-feather="smartphone"></i></div>
+            </div>
+            <div class="illus__orbit" style="--angle:216deg">
+              <div class="illus__dot"><i data-feather="bar-chart-2"></i></div>
+            </div>
+            <div class="illus__orbit" style="--angle:288deg">
+              <div class="illus__dot"><i data-feather="star"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texte droite -->
+        <div class="apropos__content" data-animate style="--delay:.15s">
+          <span class="section__tag">Notre histoire</span>
+          <h2 class="section__title">Passionnés par <em>l'excellence</em> digitale</h2>
+          <p class="apropos__lead">
+            Prisme Digital est née d'une conviction : l'Afrique mérite des
+            solutions numériques de classe mondiale. Depuis Ouagadougou,
+            nous rayonnons jusqu'au Maroc et au-delà.
+          </p>
+
+          <div class="mvv__grid">
+            <div class="mvv__item">
+              <div class="mvv__icon"><i data-feather="target"></i></div>
+              <div>
+                <h4>Mission</h4>
+                <p>Démocratiser l'excellence numérique pour les entreprises et créatifs africains.</p>
+              </div>
+            </div>
+            <div class="mvv__item">
+              <div class="mvv__icon"><i data-feather="eye"></i></div>
+              <div>
+                <h4>Vision</h4>
+                <p>Devenir la référence digitale premium du continent africain d'ici 2030.</p>
+              </div>
+            </div>
+            <div class="mvv__item">
+              <div class="mvv__icon"><i data-feather="heart"></i></div>
+              <div>
+                <h4>Valeurs</h4>
+                <p>Qualité sans compromis, créativité audacieuse, relation client authentique.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary">Travaillons ensemble <i data-feather="arrow-right"></i></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PORTFOLIO
+    ══════════════════════════════════════ -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <span class="section__tag">Nos réalisations</span>
+          <h2 class="section__title">Portfolio <em>sélectionné</em></h2>
+          <p class="section__desc">Un aperçu de nos projets les plus marquants,
+            réalisés avec passion et expertise.</p>
+        </div>
+
+        <!-- Filtres -->
+        <div class="portfolio__filters" data-animate>
+          <button class="filter-btn filter-btn--active" data-filter="all">Tout</button>
+          <button class="filter-btn" data-filter="web">Sites web</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="portfolio">Portfolios</button>
+        </div>
+
+        <div class="portfolio__grid">
+
+          <!-- Projet 1 -->
+          <article class="portfolio-card" data-animate data-category="web" style="--delay:0s">
+            <div class="portfolio-card__img">
+              <div class="portfolio-card__mockup portfolio-card__mockup--1"></div>
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Site web</span>
+                  <h3>Boutique Mode Kaya</h3>
+                  <p>E-commerce prêt-à-porter premium</p>
+                  <a href="#" class="portfolio-card__link">
+                    <i data-feather="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="portfolio-card portfolio-card--tall" data-animate data-category="design" style="--delay:.08s">
+            <div class="portfolio-card__img">
+              <div class="portfolio-card__mockup portfolio-card__mockup--2"></div>
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Design</span>
+                  <h3>Festival Ouaga Jazz</h3>
+                  <p>Identité visuelle &amp; affiches</p>
+                  <a href="#" class="portfolio-card__link">
+                    <i data-feather="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="portfolio-card" data-animate data-category="portfolio" style="--delay:.16s">
+            <div class="portfolio-card__img">
+              <div class="portfolio-card__mockup portfolio-card__mockup--3"></div>
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Portfolio</span>
+                  <h3>Photographe Aminata</h3>
+                  <p>Portfolio photographe artistique</p>
+                  <a href="#" class="portfolio-card__link">
+                    <i data-feather="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="portfolio-card portfolio-card--wide" data-animate data-category="web" style="--delay:.24s">
+            <div class="portfolio-card__img">
+              <div class="portfolio-card__mockup portfolio-card__mockup--4"></div>
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Site web</span>
+                  <h3>Cabinet Avocat Diallo</h3>
+                  <p>Site vitrine professionnel &amp; corporate</p>
+                  <a href="#" class="portfolio-card__link">
+                    <i data-feather="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 5 -->
+          <article class="portfolio-card" data-animate data-category="design" style="--delay:.32s">
+            <div class="portfolio-card__img">
+              <div class="portfolio-card__mockup portfolio-card__mockup--5"></div>
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Design</span>
+                  <h3>Startup AgriTech BF</h3>
+                  <p>Branding &amp; supports de communication</p>
+                  <a href="#" class="portfolio-card__link">
+                    <i data-feather="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 6 -->
+          <article class="portfolio-card" data-animate data-category="portfolio" style="--delay:.4s">
+            <div class="portfolio-card__img">
+              <div class="portfolio-card__mockup portfolio-card__mockup--6"></div>
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Portfolio</span>
+                  <h3>Designer Ibrahim Traoré</h3>
+                  <p>Portfolio designer UI/UX interactif</p>
+                  <a href="#" class="portfolio-card__link">
+                    <i data-feather="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__container">
+
+        <!-- Infos gauche -->
+        <div class="contact__info" data-animate>
+          <span class="section__tag">Parlons-nous</span>
+          <h2 class="section__title">Démarrons votre <em>projet</em></h2>
+          <p class="contact__desc">
+            Une idée ? Un besoin urgent ? Notre équipe est disponible pour
+            transformer votre vision en réalité digitale.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i data-feather="map-pin"></i></div>
+              <div>
+                <strong>Burkina Faso</strong>
+                <span>Ouagadougou, Secteur 15</span>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i data-feather="map-pin"></i></div>
+              <div>
+                <strong>Maroc</strong>
+                <span>Casablanca, Quartier des Affaires</span>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i data-feather="phone"></i></div>
+              <div>
+                <strong>Téléphone</strong>
+                <span>+226 77 85 46 30</span>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i data-feather="mail"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@prismedigital.bf</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire droite -->
+        <div class="contact__form-wrap" data-animate style="--delay:.15s">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name" class="form__label">Nom complet *</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Ex. : Moussa Kaboré" required />
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">Adresse email *</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="Ex. : moussa@exemple.com"
+                required />
+            </div>
+
+            <div class="form__group">
+              <label for="service" class="form__label">Service souhaité</label>
+              <select id="service" name="service" class="form__input form__select">
+                <option value="">— Choisir un service —</option>
+                <option value="web">Création de site web</option>
+                <option value="affiche">Affiche publicitaire</option>
+                <option value="portfolio">Portfolio professionnel</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="message" class="form__label">Message *</label>
+              <textarea id="message" name="message" class="form__input form__textarea" rows="5"
+                placeholder="Décrivez votre projet en quelques lignes…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Envoyer le message <i data-feather="send"></i>
+            </button>
+
+            <p class="form__note">
+              <i data-feather="shield"></i>
+              Vos données sont protégées et ne seront jamais partagées.
+            </p>
+          </form>
+          <!-- Message succès -->
+          <div class="form__success" id="formSuccess" aria-live="polite">
+            <i data-feather="check-circle"></i>
+            <h3>Message envoyé !</h3>
+            <p>Nous vous répondrons sous 24 heures. Merci de votre confiance.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <!-- Col 1 : Brand -->
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo">
+          <span class="logo__prisme">Prisme</span>
+          <span class="logo__digital">Digital</span>
+        </a>
+        <p class="footer__tagline">
+          L'excellence numérique au service de l'Afrique.
+        </p>
+
+      </div>
+
+      <!-- Col 2 : Liens rapides -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 : Services -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
+          <li><a href="#services">Création de sites web</a></li>
+          <li><a href="#services">Affiches publicitaires</a></li>
+          <li><a href="#services">Portfolios professionnels</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 : Contact rapide -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Nous contacter</h4>
+        <ul class="footer__links footer__links--contact">
+          <li>
+            <i data-feather="map-pin"></i>
+            Ouagadougou, Burkina Faso
+          </li>
+          <li>
+            <i data-feather="map-pin"></i>
+            Casablanca, Maroc
+          </li>
+          <li>
+            <i data-feather="phone"></i>
+            +226 77 85 46 30
+          </li>
+          <li>
+            <i data-feather="mail"></i>
+            hello@prismedigital.bf
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> Prisme Digital. Tous droits réservés.</p>
+        <p>Conçu avec <i data-feather="heart"></i> au Burkina Faso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       BOUTON WHATSAPP FLOTTANT
+  ══════════════════════════════════════ -->
+  <a href="https://wa.me/22677854630?text=Bonjour%20Prisme%20Digital%2C%20je%20voudrais%20d%C3%A9crire%20mon%20projet."
+    class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+    <span class="whatsapp-btn__label">WhatsApp</span>
+  </a>
+
+  <!-- ══════════════════════════════════════
+       LIER LE JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script src="script.js"></script>
+</body>
+
+</html>
